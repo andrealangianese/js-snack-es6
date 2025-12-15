@@ -135,3 +135,35 @@ console.log(namesFouls);
 // Crea 10 oggetti che rappresentano una zucchina.
 // Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+
+const zucchina = [
+    { varietà: 'Zucchina Nera di Milano', peso: 34, lunghezza: 14 },
+    { varietà: 'romanesco', peso: 290, lunghezza: 16 },
+    { varietà: 'fiorentina', peso: 134, lunghezza: 15 },
+    { varietà: 'striata di napoli', peso: 45, lunghezza: 13 },
+    { varietà: 'trombetta', peso: 57, lunghezza: 17 },
+    { varietà: 'zucchina gialla', peso: 69, lunghezza: 15 },
+    { varietà: 'bianca di sicilia', peso: 90, lunghezza: 16 },
+    { varietà: 'ortolana', peso: 139, lunghezza: 14 },
+    { varietà: 'patisson', peso: 98, lunghezza: 15 },
+    { varietà: 'tonda di nizza', peso: 75, lunghezza: 16 }
+];
+
+//variale first
+
+let lunghezzeup = [];
+let lunghezzedown = [];
+
+//ciclo 
+for (let i = 0; i < zucchina.length; i++) {
+    
+    if (zucchina[i].lunghezza <= 15) {
+        lunghezzedown.push(zucchina[i].lunghezza)
+    } else {lunghezzeup.push(zucchina[i].lunghezza)}
+}
+
+console.log(lunghezzeup);
+console.log(lunghezzedown);
+
+
+
