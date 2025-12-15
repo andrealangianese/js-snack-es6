@@ -61,6 +61,43 @@ console.log(biciLighter);
 // Creare un array di oggetti di squadre di calcio.
 // Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
 // Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+
+const squadreCalcio = [
+  {
+    nome: "Juventus",
+    punti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Milan",
+    punti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Inter",
+    punti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Roma",
+    punti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Napoli",
+    punti: 0,
+    falliSubiti: 0
+  }
+];
+
+console.log(squadreCalcio);
+
+// generazione di numeri casuali da 0 a 100
+let valoreDecimale = Math.floor(Math.random() * 101);
+console.log(valoreDecimale);
+
+//assegnazione dei valori a punti e falli subiti
+
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
