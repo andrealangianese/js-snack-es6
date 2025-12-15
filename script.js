@@ -90,13 +90,23 @@ const squadreCalcio = [
   }
 ];
 
-console.log(squadreCalcio);
 
 // generazione di numeri casuali da 0 a 100
-let valoreDecimale = Math.floor(Math.random() * 101);
-console.log(valoreDecimale);
+// let valoreCasuale = Math.floor(Math.random() * 101);
+// console.log(valoreCasuale);
 
 //assegnazione dei valori a punti e falli subiti
+
+for (let i = 0; i < squadreCalcio.length; i++) {
+
+    //assegno punti casuali
+    squadreCalcio[i].punti = Math.floor(Math.random() * 101);
+    
+    //assegno fallisubiti casuali
+    squadreCalcio[i].falliSubiti =Math.floor(Math.random() * 101);
+}
+
+console.log(squadreCalcio);
 
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
