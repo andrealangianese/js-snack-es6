@@ -151,19 +151,30 @@ const zucchina = [
 
 //variale first
 
-let lunghezzeup = [];
-let lunghezzedown = [];
+let zucchinePiccole = [];
+let zucchineGrandi = [];
 
-//ciclo 
+// Divido le zucchine in base alla lunghezza
 for (let i = 0; i < zucchina.length; i++) {
-    
     if (zucchina[i].lunghezza <= 15) {
-        lunghezzedown.push(zucchina[i].lunghezza)
-    } else {lunghezzeup.push(zucchina[i].lunghezza)}
+        zucchinePiccole.push(zucchina[i]);
+    } else {
+        zucchineGrandi.push(zucchina[i]);
+    }
 }
 
-console.log(lunghezzeup);
-console.log(lunghezzedown);
+// Somma dei pesi dei due gruppi 
+let pesoPiccole = 0;
+for (let i = 0; i < zucchinePiccole.length; i++) {
+    pesoPiccole += zucchinePiccole[i].peso;
+}
 
+let pesoGrandi = 0;
+for (let i = 0; i < zucchineGrandi.length; i++) {
+    pesoGrandi += zucchineGrandi[i].peso;
+}
+
+console.log("Peso zucchine <= 15cm:", pesoPiccole);
+console.log("Peso zucchine > 15cm:", pesoGrandi);
 
 
