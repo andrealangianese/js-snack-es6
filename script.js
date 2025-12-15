@@ -111,6 +111,25 @@ console.log(squadreCalcio);
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+let namesFouls = [];
+
+//ciclo uguale a quello precedente
+
+for (let i = 0; i < squadreCalcio.length; i++) {
+
+    //creo costante per eliminare i punti e tenere solo quello che mi serve
+    const toKeep = {
+        nome : squadreCalcio[i].nome,
+        falliSubiti : squadreCalcio[i].falliSubiti
+    }
+
+    //pusho la const dentro l'array vuoto e lo stampo
+    namesFouls.push(toKeep)
+}
+
+console.log(namesFouls);
+
+
 // BONUS 
  
 // Crea 10 oggetti che rappresentano una zucchina.
