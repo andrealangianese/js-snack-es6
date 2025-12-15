@@ -1,7 +1,61 @@
 // Snack 1
-// Creare un array di oggetti:
+//  Creare un array di oggetti: 
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore.
+
+
+const biciDaCorsa = [
+  {
+    nome: "Bianchi Oltre",
+    peso: 7.2
+  },
+  {
+    nome: "Pinarello Dogma",
+    peso: 6.8
+  },
+  {
+    nome: "Specialized Tarmac",
+    peso: 7.0
+  },
+  {
+    nome: "Trek Emonda",
+    peso: 6.9
+  },
+  {
+    nome: "Cannondale SuperSix EVO",
+    peso: 6.7
+  },
+  {
+    nome: "Colnago V3Rs",
+    peso: 6.5
+  },
+  {
+    nome: "Scott Addict RC",
+    peso: 6.6
+  },
+  {
+    nome: "Wilier Zero SLR",
+    peso: 6.9
+  }
+];
+
+console.log(biciDaCorsa);
+
+// non posso assegnare un array vuoto, perchè devo fare un confronto con qualcosa
+let biciLighter = biciDaCorsa[0];
+
+//cicliamo la lista delle bici
+
+for (let i =  0; i < biciDaCorsa.length; i++) {
+
+    // se la bici che stiamo confrontando ha un peso inferiore della bici più leggera trovata finora
+    if (biciDaCorsa[i].peso < biciLighter.peso) {
+        // la bici più leggera sarà la bici [i]
+        biciLighter = biciDaCorsa[i];
+    }
+}
+
+console.log(biciLighter);
 
 // Snack2
 // Creare un array di oggetti di squadre di calcio.
